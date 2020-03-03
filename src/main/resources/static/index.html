@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <title>SCC配置中心</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+           <h1 >SCC<small>玩具</small></h1>
+        </div>
+
+        <div class="col-md-3 col-md-offset-6 text-right">
+            <h2>测试用户</h2>
+            上次登录时间：2020-03-01 15:00:00
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <!--左侧导航栏-->
+        <div class="col-md-3">
+            <div style="height: 20px"></div>
+            <select id="projname" title="选择子系统" class="selectpicker form-control" data-live-search="true">
+                <option>订单子系统</option>
+                <option>客户子系统</option>
+            </select>
+
+            <div style="height: 20px"></div>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a>online</a></li>
+                <li><a>gray_a</a></li>
+                <li><a>gray_b</a></li>
+                <li><a>test_a</a></li>
+                <li><a>test_b</a></li>
+            </ul>
+        </div>
+
+
+        <!--右侧内容页-->
+        <div class="col-md-9">
+            <h3>订单子系统
+                <small>gray_b</small>
+            </h3>
+            <div class="row">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>键</th>
+                            <th>值</th>
+                            <th>
+                                <button type="button" class="btn btn-primary btn-xs">新增</button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>mysql.ip</td>
+                            <td>127.0.0.1</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">修改</button>
+                                <button type="button" class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>mysql.username</td>
+                            <td>root</td>
+                            <<td>
+                            <button type="button" class="btn btn-primary btn-xs">修改</button>
+                            <button type="button" class="btn btn-danger btn-xs">删除</button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>mysql.password</td>
+                            <td>123456</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">修改</button>
+                                <button type="button" class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1/js/bootstrap.min.js"></script>
+</html>

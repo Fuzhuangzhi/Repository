@@ -1,0 +1,36 @@
+server:
+  port: 8020
+
+
+
+spring:
+  application:
+    name: SCC-SERVER
+
+#数据库连接配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+#redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 6000ms
+
+#mybatis配置
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+scc:
+  login-check-enabled: true
+#spring
+#  profiles:
+#    active: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations: D:/config/demoConf

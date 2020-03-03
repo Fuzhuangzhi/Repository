@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="userMapper">
+    <select id="queryUserByUserName" parameterType="Map" resultMap="Map">
+        select
+            t.username,
+            t.last_login_time as lastlogintime,
+            t.last_login_date as lastlogindate
+        from t_scc_user t
+        where t.username = #{UserName}
+             and t.password = #{PassWord}
+    </select>
+
+    <update id="updateUserLoginTime" parameterType="String">
+        update t_scc_user
+        set last_login_time = #{LastLoginTime},
+            last_login_date = #{LastLoginDate}
+        where
+            username = #{UserName}
+    </update>
+</mapper>
